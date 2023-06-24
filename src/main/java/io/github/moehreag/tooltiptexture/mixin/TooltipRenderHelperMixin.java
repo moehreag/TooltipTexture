@@ -13,7 +13,7 @@ public class TooltipRenderHelperMixin {
 
 	@Inject(method = "renderRectangle", at = @At("HEAD"), cancellable = true)
 	private static void tooltiptexture$drawBackground(GuiGraphics graphics, int x, int y, int width, int height, int z, int color, CallbackInfo ci){
-		graphics.drawTexture(TooltipTexture.BACKGROUND_TEXTURE, x, y, z, 0, 0, width, height, 20, 10);
+		graphics.drawTexture(TooltipTexture.BACKGROUND_TEXTURE, x, y, z, 0, 0, width, height, width, height);
 
 		ci.cancel();
 	}
