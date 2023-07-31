@@ -5,7 +5,11 @@ This mod makes it possible to modify the tooltip background using resource packs
 
 For resourcepack makers:  
 The background texture used is located at 
-`assets/tooltiptexture/background.png`.
+`assets/tooltiptexture/background.png`,
+the textures for the inner borders are at 
+`assets/tooltiptexture/border_{top, bottom, left, right}.png`. The
+textures for the outer borders are at
+`assets/tooltiptexture/border_outer_{top, bottom, left, right}.png` respectively.
 
 ## Credits 
 
