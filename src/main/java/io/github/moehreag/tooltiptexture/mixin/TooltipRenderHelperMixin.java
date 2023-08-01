@@ -80,7 +80,7 @@ public abstract class TooltipRenderHelperMixin {
 		outerBorder = drawStretchedTexture(graphics, TooltipTexture.BORDER_OUTER_RIGHT, x + width, y, z, 1, height) || outerBorder;
 
 		if (!outerBorder) {
-			renderHorizontalLine(graphics, x - 1, y, width, z, BACKGROUND_COLOR);
+			renderHorizontalLine(graphics, x, y - 1, width, z, BACKGROUND_COLOR);
 			renderHorizontalLine(graphics, x, y + height, width, z, BACKGROUND_COLOR);
 			renderVerticalLine(graphics, x - 1, y, height, z, BACKGROUND_COLOR);
 			renderVerticalLine(graphics, x + width, y, height, z, BACKGROUND_COLOR);
