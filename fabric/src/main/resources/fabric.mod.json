@@ -1,31 +1,30 @@
 {
-    "schemaVersion": 1,
-    "id": "tooltiptexture",
-    "version": "2.0.0",
-    "name": "TooltipTexture",
-    "description": "Makes tooltips use a background texture.",
-    "authors": [
-        "shizotoaster",
-        "moehreag"
-    ],
-    "contact": {
-        "sources": "https://github.com/shizotoaster/TooltipTexture-Reforked"
-    },
-    "license": "GPLv3",
-    "icon": "tooltiptexture.png",
-    "environment": "*",
-    "entrypoints": {
-        "client": [
-            "io.github.moehreag.tooltiptexture.TooltipTexture"
-        ]
-    },
-    "mixins": [
-        "tooltiptexture.mixins.json"
-    ],
-    "depends": {
-        "fabricloader": ">=0.14",
-        "minecraft": ">=1.20",
-        "java": ">=17"
-    }
+	"schemaVersion": 1,
+	"id": "tooltiptexture",
+	"version": "${version}",
+	"name": "TooltipTexture",
+	"description": "Makes tooltips use a background texture.",
+	"authors": [
+		"shizotoaster",
+		"moehreag"
+	],
+	"contact": {
+		"sources": "https://github.com/moehreag/TooltipTexture"
+	},
+	"license": "LGPLv3",
+	"icon": "tooltiptexture.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"io.github.moehreag.tooltiptexture.TooltipTexture"
+		]
+	},
+	"mixins": [
+		"tooltiptexture.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14",
+		"minecraft": ">=1.20",
+		"java": ">=17"
+	}
 }
-  
