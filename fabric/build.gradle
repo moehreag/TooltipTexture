@@ -73,6 +73,7 @@ modrinth {
 	versionNumber = "${project.version}-fabric+${project.minecraft_version}"
 	versionName = "TooltipTexture ${project.version}-fabric+${project.minecraft_version}"
 	versionType = "release"
+	loaders.set(["fabric", "quilt"])
 	uploadFile = remapJar
 	additionalFiles.set([remapSourcesJar])
 
