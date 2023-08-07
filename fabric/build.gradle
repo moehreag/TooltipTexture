@@ -71,6 +71,7 @@ modrinth {
 	token = System.getenv("MODRINTH_TOKEN")
 	projectId = "nurYOSyO"
 	versionNumber = "${project.version}-fabric+${project.minecraft_version}"
+	versionName = "TooltipTexture ${project.version}-fabric+${project.minecraft_version}"
 	versionType = "release"
 	uploadFile = remapJar
 	additionalFiles.set([remapSourcesJar])

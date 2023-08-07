@@ -113,6 +113,7 @@ modrinth {
 	token = System.getenv("MODRINTH_TOKEN")
 	projectId = "nurYOSyO"
 	versionNumber = "${project.version}-forge+${project.minecraft_version}"
+	versionName = "TooltipTexture ${project.version}-forge+${project.minecraft_version}"
 	versionType = "release"
 	uploadFile = jar
 	additionalFiles.set([sourcesJar])

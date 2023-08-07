@@ -1,11 +1,11 @@
 # Changelog
 
-# 2.0.0
+### 2.0.0
 
 - port to Forge
 - add compatibility with Fabric
 
-# 1.1.1
+### 1.1.1
 
 - Fixed top of a tooltip not being rendered
 
