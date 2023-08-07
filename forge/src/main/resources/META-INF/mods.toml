@@ -1,0 +1,27 @@
+modLoader = "javafml" #mandatory
+loaderVersion = "[46,)" #mandatory This is typically bumped every Minecraft version by Forge. See https://files.minecraftforge.net/ for a list of versions.
+license = "GPLv3" # Review your options at https://choosealicense.com/.
+issueTrackerURL="https://github.com/shizotoaster/TooltopTexture-Reforked/issues" #optional
+[[mods]] #mandatory
+modId = "tooltiptexture" #mandatory
+version = "2.0.0" #mandatory
+displayName = "TooltipTexture" #mandatory
+#updateJSONURL="https://change.me.example.invalid/updates.json" #optional (see https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/)
+displayURL="https://github.com/shizotoaster/TooltipTexture-Reforked" #optional (displayed in the mod UI)
+logoFile = "tooltiptexture.png" #optional (needs to be in the root of your mod jar (root of your 'resources' folder))
+authors = "shizotoaster, moehreag" #optional
+description = '''
+Makes tooltips use a background texture.
+''' #mandatory (Supports multiline text)
+[[dependencies.tooltiptexture]] #optional
+modId = "forge" #mandatory
+mandatory = true #mandatory
+versionRange = "[46,)" #mandatory
+ordering = "NONE" # The order that this dependency should load in relation to your mod, required to be either 'BEFORE' or 'AFTER' if the dependency is not mandatory
+side = "CLIENT" # Side this dependency is applied on - 'BOTH', 'CLIENT' or 'SERVER'
+[[dependencies.tooltiptexture]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20,)"
+ordering = "NONE"
+side = "CLIENT"
