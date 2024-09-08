@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.1.0
+
+- update to 1.21.1
+- This will be the final update for this mod as the functionality is included with the
+game in recent snapshots
+
 ### 2.0.0
 
 - port to Forge

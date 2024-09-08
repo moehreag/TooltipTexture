@@ -1,5 +1,6 @@
 package io.github.moehreag.tooltiptexture.mixin;
 
+import com.llamalad7.mixinextras.sugar.Local;
 import io.github.moehreag.tooltiptexture.TooltipTextureCommon;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
@@ -12,10 +13,9 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 @Mixin(TooltipRenderUtil.class)
-public class TooltipRenderUtilMixin {
+public abstract class TooltipRenderUtilMixin {
 	@Shadow
 	@Final
 	private static int BACKGROUND_COLOR;
@@ -52,10 +52,9 @@ public class TooltipRenderUtilMixin {
 			target = "Lnet/minecraft/client/gui/screens/inventory/tooltip/TooltipRenderUtil;renderHorizontalLine(Lnet/minecraft/client/gui/GuiGraphics;IIIII)V",
 			ordinal = 0
 		),
-		locals = LocalCapture.CAPTURE_FAILEXCEPTION,
 		cancellable = true
 	)
-	private static void tooltiptexture$renderTooltipBackground(GuiGraphics graphics, int x0, int y0, int width0, int height0, int z, CallbackInfo ci, int x, int y, int width, int height) {
+	private static void tooltiptexture$renderTooltipBackground(GuiGraphics graphics, int x0, int y0, int width0, int height0, int z, CallbackInfo ci, @Local(ordinal = 5) int x, @Local(ordinal = 6) int y, @Local(ordinal = 7) int width, @Local(ordinal = 8) int height) {
 
 		boolean background;
 		background = drawStretchedTexture(graphics, TooltipTextureCommon.BACKGROUND, x, y, z, width, height);
